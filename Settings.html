@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <link href="assets/css/style.css" rel="stylesheet">
+        <title>MyDentist</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="container">
+              <a class="navbar-brand" href="#"><img src="assets/img/Logowith_word.png"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">+998932757757</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Главная</a>
+                  </li>
+                  <li class="nav-item">
+                    
+                    <div class="dropdown lang_select nav-link">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        RU
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">UZ</a></li>
+                        <li><a class="dropdown-item" href="#">RU</a></li>
+                        </ul>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <li class="nav-item dropdown">
+                      <a class="nav-link notification_btn" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fas fa-bell"></i> +3
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Новость 1</a></li>
+                        <li><a class="dropdown-item" href="#">Новость 2</a></li>
+                      </ul>
+                    </li>
+                  </li>
+                  <li class="nav-item">
+                    <li class="nav-item dropdown">
+                      <a class="nav-link profile_btn" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fas fa-user"></i> Профиль
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Мои записи</a></li>
+                        <li><a class="dropdown-item" href="#">Настройки</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i> Выход</a></li>
+                      </ul>
+                    </li>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <div class="container">
+            <div class="sub_title_gray center mb-4">
+                Настройки
+            </div>
+            <ul class="nav nav-pills my_select mx-auto mb-3" id="pills-tab" role="tablist">
+              <li class="nav-item my_select_item" role="presentation">
+                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Пользователь</button>
+              </li>
+              <li class="nav-item my_select_item" role="presentation">
+                <button class="nav-link" id="pills-password-tab" data-bs-toggle="pill" data-bs-target="#pills-password" type="button" role="tab" aria-controls="pills-password" aria-selected="true">Сменить пароль</button>
+              </li>
+              <li class="nav-item my_select_item" role="presentation">
+                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Заболевания</button>
+              </li>
+              <li class="nav-item my_select_item" role="presentation">
+                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Заболевания 2</button>
+              </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+              <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                <div class="register_panel my-5">
+                <form>
+                  <div class="row">
+                    <div class="col-xxl-6 col-xl-6 col-md-6 col-sm-6">
+                      <div class="mb-3">
+                        <label for="exampleInputname" class="form-label">ФИО</label>
+                        <input value="Отакулов Акбар" type="text" class="form-control" id="exampleInputname">
+                      </div>
+                    <div class="mb-3">
+                        <label for="exampleInputnumber" class="form-label">Номер телефона</label>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon3">+998</span>
+                            <input value="998224501" type="tel" class="form-control" id="exampleInputnumber" aria-describedby="numberhelp">
+                        </div>
+                      <div id="numberhelp" class="form-text">Ваши данные остаются в конфиденциальности</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputaddress" class="form-label">Адрес</label>
+                      <input value="Город ташкент, учтепинский район " type="text" class="form-control" id="exampleInputaddress">
+                    </div>
+                    </div>
+                    <div class="col-xxl-6 col-xl-6 col-md-6 col-sm-6">
+                  <div class="mb-3">
+                    <label for="exampleInputaddress" class="form-label">День рождения</label>
+                    <div id="exampleInputaddress" class="birthday_holder ">
+                        <div class="birth_item">
+                            <i id="birth_year_1" class="fas fa-sort-up"></i>
+                            <input maxlength="4" type="text" id="year_holder" value="2002">
+                            <i id="birth_year_2" class="fas fa-sort-down"></i>
+                        </div>
+                        <div class="birth_item">
+                            <i id="birth_month_1" class="fas fa-sort-up"></i>
+                            <input id="month_holder" value="Январь">
+                            <i id="birth_month_2" class="fas fa-sort-down"></i>
+                        </div>
+                        <div class="birth_item">
+                            <i id="birth_day_1" class="fas fa-sort-up"></i>
+                            <input maxlength="2" id="day_holder" value="20">
+                            <i id="birth_day_2" class="fas fa-sort-down"></i>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="formFile" class="form-label">Ваше фото</label>
+                    <input class="form-control" type="file" id="formFile">
+                  </div>
+                  </div>
+                  </div>
+                  <button type="submit" class="btn my_btn mx-auto">Изменить</button>
+                    </form>
+                  </div>
+              </div>
+              <div class="tab-pane fade" id="pills-password" role="tabpanel" aria-labelledby="pills-password-tab">
+                <div class="register_panel my-5 my_password mx-auto">
+                  <form>
+              <div class="mb-3">
+                  <label for="exampleInputnumber" class="form-label">Старый пароль</label>
+                  <input type="tel" class="form-control" id="exampleInputnumber" aria-describedby="numberhelp">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputnumber" class="form-label">Новый пароль</label>
+                <input type="tel" class="form-control" id="exampleInputnumber" aria-describedby="numberhelp">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputnumber" class="form-label">Подтвердите новый пароль</label>
+              <input type="tel" class="form-control" id="exampleInputnumber" aria-describedby="numberhelp">
+            </div>
+              <button type="submit" class="btn mb-3 my_btn mx-auto">Далее</button>
+              <a href="#" class="a_password display_block mx-auto mb-3">Забыли пароль?</a>
+              </form>
+              </div>
+              </div>
+              <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                <div class="register_panel my-5">
+                  <form>
+                    <div class="row">
+                      <div class="col-xxl-6 col-xl-6 col-md-6 col-sm-6">
+                        <div class="mb-3">
+                          <label for="exampleInputname" class="form-label">Сахарный диабет</label>
+                          <select class="form-select" aria-label="Default select example">
+                            <option selected>Нет</option>
+                            <option value="1">Есть</option>
+                            <option value="2">Не знаю</option>
+                          </select>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputname" class="form-label">Количество применения наркоза</label>
+                          <select class="form-select" aria-label="Default select example">
+                            <option selected>1</option>
+                            <option value="1">2</option>
+                            <option value="2">3</option>
+                            <option value="2">4</option>
+                            <option value="2">5</option>
+                          </select>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputname" class="form-label">Гепатит Б</label>
+                          <select class="form-select" aria-label="Default select example">
+                            <option selected>Нет</option>
+                            <option value="1">Есть</option>
+                            <option value="2">Не знаю</option>
+                          </select>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputname" class="form-label">СПИД</label>
+                          <select class="form-select" aria-label="Default select example">
+                            <option selected>Нет</option>
+                            <option value="1">Есть</option>
+                            <option value="2">Не знаю</option>
+                          </select>
+                        </div>
+                        
+                      </div>
+                      <div class="col-xxl-6 col-xl-6 col-md-6 col-sm-6">
+                        <div class="mb-3">
+                          <label for="exampleInputname" class="form-label">Давление</label>
+                          <select class="form-select" aria-label="Default select example">
+                            <option selected>Норма</option>
+                            <option value="1">Низкое</option>
+                            <option value="2">Высокое</option>
+                          </select>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputname" class="form-label">Аллергия</label>
+                          <select id="allergy_selector" class="form-select" aria-label="Default select example">
+                            <option value="0" selected>Нет</option>
+                            <option value="1">Есть     (Напишите от чего)</option>
+                          </select>
+                          <input placeholder="Напишите от чего аллергия" id="allergy_input" type="text" class="form-control mt-3 display_none">
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputname" class="form-label">Бронхиальная астма</label>
+                          <select class="form-select" aria-label="Default select example">
+                            <option selected>Нет</option>
+                            <option value="1">Есть</option>
+                            <option value="2">Не знаю</option>
+                          </select>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputname" class="form-label">Головокружение</label>
+                          <select class="form-select" aria-label="Default select example">
+                            <option selected>Нет</option>
+                            <option value="1">Часто</option>
+                            <option value="2">Иногда</option>
+                          </select>
+                        </div>
+                    </div>
+                    </div>
+                    <button type="submit" class="btn my_btn mx-auto">Изменить</button>
+                      </form>
+                    </div>
+              </div>
+              <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                <div class="register_panel my-5">
+                <form>
+                  <div class="row">
+                    <div class="col-xxl-6 col-xl-6 col-md-6 col-sm-6">
+                        <div class="mb-3">
+                          <label for="exampleInputname" class="form-label">Эпилепсия</label>
+                          <select class="form-select" aria-label="Default select example">
+                            <option selected>Нет</option>
+                            <option value="1">Есть</option>
+                          </select>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputname" class="form-label">Заболевание крови</label>
+                          <select class="form-select" aria-label="Default select example">
+                            <option selected>Нет</option>
+                            <option value="1">Есть</option>
+                          </select>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputname" class="form-label">Постоянные лекарства</label>
+                          <select id="medicine_selector" class="form-select" aria-label="Default select example">
+                            <option value="0" selected>Нет</option>
+                            <option value="1">Есть (Напишите какие)</option>
+                          </select>
+                          <input placeholder="Напишите какие лекарства" id="medicine_input" type="text" class="form-control mt-3 display_none">
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputname" class="form-label">Болели инсультом?</label>
+                          <select class="form-select" aria-label="Default select example">
+                            <option selected>Нет</option>
+                            <option value="1">Да</option>
+                          </select>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputname" class="form-label">Болели инфарктом?</label>
+                          <select class="form-select" aria-label="Default select example">
+                            <option selected>Нет</option>
+                            <option value="1">Да</option>
+                          </select>
+                        </div>                 
+                    </div>
+                    <div class="col-xxl-6 col-xl-6 col-md-6 col-sm-6">
+                      <div class="mb-3">
+                        <label for="exampleInputname" class="form-label">Онкологические заболевания</label>
+                        <select class="form-select" aria-label="Default select example">
+                          <option selected>Нет</option>
+                          <option value="1">Да</option>
+                        </select>
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleInputname" class="form-label">Туберкулёз</label>
+                        <select class="form-select" aria-label="Default select example">
+                          <option selected>Нет</option>
+                          <option value="1">Да</option>
+                        </select>
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleInputname" class="form-label">Принимаете ли алкоголь</label>
+                        <select class="form-select" aria-label="Default select example">
+                          <option selected>Нет</option>
+                          <option value="1">Да</option>
+                        </select>
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleInputname" class="form-label">Беременность</label>
+                        <select id="pregnancy_selector" class="form-select" aria-label="Default select example">
+                          <option value="0" selected>Нет</option>
+                          <option value="1">Есть (Напишите какие)</option>
+                        </select>
+                        <input placeholder="Напишите период беременности" id="pregnancy_input_1" type="text" class="form-control mt-3 display_none" >
+                        <input placeholder="Сколько месяцов" id="pregnancy_input_2" type="text" class="form-control mt-3 display_none" >
+                      </div>
+                  </div>
+                  </div>
+                  <button type="submit" class="btn my_btn mx-auto">Изменить</button>
+                    </form>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="footer">
+            <div class="container">
+              <div class="row">
+                <div class="col-xll-4 col-xl-4 col-md-4">
+                  <div class="footer_logo">
+                    <img src="assets/img/Footer_logo.png">
+                  </div>
+                  <div class="footer_text_2">Современная платформа для пациентов и стоматологов</div>
+                </div>
+                <div class="col-xll-4 col-xl-4 col-md-4">
+                  <div class="footer_text_1 mb-2">Файлы сайта</div>
+                  <a href="#" class="footer_text_2">Публичная оферта</a>
+                  <a href="#" class="footer_text_2">Правила пользования</a>
+                </div>
+                <div class="col-xll-4 col-xl-4 col-md-4">
+                  <div class="footer_text_1 mb-2">Регионы настоящих пользователей</div>
+                  <span class="footer_text_2">Ташкент</span>
+                  <span class="footer_text_2">Самарканд</span>
+                  <span class="footer_text_2">Андижан</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pre_footer px-3 py-2">
+            <a href="https://www.instagram.com/blurcode_/" target="_blank">
+                <img height="30px" src="assets/img/Ресурс 4@4x.png">
+            </a>
+            <a class="developers" href="https://www.instagram.com/blurcode_/" target="_blank">Powered by BlurCode Studio</a>
+        </div>
+
+          
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="assets/Javascript/script.js"></script>
+    </body>
+</html>

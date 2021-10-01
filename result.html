@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <link href="assets/css/style.css" rel="stylesheet">
+        <title>MyDentist</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="container">
+              <a class="navbar-brand" href="#"><img src="assets/img/Logowith_word.png"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">+998932757757</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Главная</a>
+                  </li>
+                  <li class="nav-item">
+                    
+                    <div class="dropdown lang_select nav-link">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        RU
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">UZ</a></li>
+                        <li><a class="dropdown-item" href="#">RU</a></li>
+                        </ul>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <li class="nav-item dropdown">
+                      <a class="nav-link notification_btn" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fas fa-bell"></i> +3
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Новость 1</a></li>
+                        <li><a class="dropdown-item" href="#">Новость 2</a></li>
+                      </ul>
+                    </li>
+                  </li>
+                  <li class="nav-item">
+                    <li class="nav-item dropdown">
+                      <a class="nav-link profile_btn" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fas fa-user"></i> Профиль
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Мои записи</a></li>
+                        <li><a class="dropdown-item" href="#">Настройки</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i> Выход</a></li>
+                      </ul>
+                    </li>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <div class="filter">
+          <div class="container">
+            <div class="filter_holder">
+                <div class="dropdown region_select_2">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="region" data-bs-toggle="dropdown" aria-expanded="false">
+                      г.Ташкент
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="region">
+                      <li><a class="dropdown-item region_item" href="#">г.Ташкент</a></li>
+                      <li><a class="dropdown-item region_item" href="#">Ташкентская область</a></li>
+                      <li><a class="dropdown-item region_item" href="#">Самарканд</a></li>
+                      <li><a class="dropdown-item region_item" href="#">Андижан</a></li>
+                      <li><a class="dropdown-item region_item" href="#">Фергана</a></li>
+                      <li><a class="dropdown-item region_item" href="#">Кашкадарья</a></li>
+                      <li><a class="dropdown-item region_item" href="#">Сурхандаря</a></li>
+                      <li><a class="dropdown-item region_item" href="#"></a></li>
+                      <li><a class="dropdown-item region_item" href="#">Сырдаря</a></li>
+                      <li><a class="dropdown-item region_item" href="#">Хорезм</a></li>
+                      <li><a class="dropdown-item region_item" href="#">Наваи</a></li>
+                      <li><a class="dropdown-item region_item" href="#">Республика Каракалпакистан</a></li>
+                      <li><a class="dropdown-item region_item" href="#">Бухара</a></li>
+                    </ul>
+                  </div>
+                  <div class="checkers_filter">
+                    <div class="dropdown gender_select">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        Мужчина
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Мужчина</a></li>
+                        <li><a class="dropdown-item" href="#">Женщина</a></li>
+                        </ul>
+                    </div>
+                    <div class="form-check checker">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        24 Часа
+                      </label>
+                    </div>
+                    <div class="form-check checker">
+                      <input class="form-check-input" type="checkbox" value="" id="location_checker">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        По близости
+                      </label>
+                    </div>
+                  </div>
+                  <button type="button" class="btn my_btn_1">Показать</button>
+              </div>
+              <div class="show_result">Результат: 1-6/32 </div>
+              </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-xxl-4 col-xl-4 col-md-4 col-sm-12">
+                <div class="stom_card">
+                  <div class="card_img_holder"><img src="assets/img/flat-dental-care-concept-illustration/5513187.jpg"></div>
+                  <div class="card_clinic">DentClinic</div>
+                  <div class="card_dent">
+                    Имя: Аброр Маматалиев
+                  </div>
+                  <div class="card_adress">
+                    Адресс: Юнусабадский район,улица Шахристан
+                  </div>
+                  <div class="card_adress_2">
+                    Ориентир: Около Университета ТУИТ
+                  </div>
+                  <div class="card_time">
+                    Режим работы: 9:00 - 15:00
+                  </div>
+                  <div class="card_phone">
+                    Номер телефона: +998998224501
+                  </div>
+                  <button type="button" class="btn my_btn">Посмотреть цены</button>
+                </div>
+              </div>
+              <div class="col-xxl-4 col-xl-4 col-md-4 col-sm-12">
+                <div class="stom_card">
+                  <div class="card_img_holder"><img src="assets/img/flat-dental-care-concept-illustration/5513187.jpg"></div>
+                  <div class="card_clinic">DentClinic</div>
+                  <div class="card_dent">
+                    Имя: Аброр Маматалиев
+                  </div>
+                  <div class="card_adress">
+                    Адресс: Юнусабадский район,улица Шахристан
+                  </div>
+                  <div class="card_adress_2">
+                    Ориентир: Около Университета ТУИТ
+                  </div>
+                  <div class="card_time">
+                    Режим работы: 9:00 - 15:00
+                  </div>
+                  <div class="card_phone">
+                    Номер телефона: +998998224501
+                  </div>
+                  <button type="button" class="btn my_btn">Посмотреть цены</button>
+                </div>
+              </div>
+              <div class="col-xxl-4 col-xl-4 col-md-4 col-sm-12">
+                <div class="stom_card">
+                  <div class="card_img_holder"><img src="assets/img/flat-dental-care-concept-illustration/5513187.jpg"></div>
+                  <div class="card_clinic">DentClinic</div>
+                  <div class="card_dent">
+                    Имя: Аброр Маматалиев
+                  </div>
+                  <div class="card_adress">
+                    Адресс: Юнусабадский район,улица Шахристан
+                  </div>
+                  <div class="card_adress_2">
+                    Ориентир: Около Университета ТУИТ
+                  </div>
+                  <div class="card_time">
+                    Режим работы: 9:00 - 15:00
+                  </div>
+                  <div class="card_phone">
+                    Номер телефона: +998998224501
+                  </div>
+                  <button type="button" class="btn my_btn">Посмотреть цены</button>
+                </div>
+              </div>
+              <div class="col-xxl-4 col-xl-4 col-md-4 col-sm-12">
+                <div class="stom_card">
+                  <div class="card_img_holder"><img src="assets/img/flat-dental-care-concept-illustration/5513187.jpg"></div>
+                  <div class="card_clinic">DentClinic</div>
+                  <div class="card_dent">
+                    Имя: Аброр Маматалиев
+                  </div>
+                  <div class="card_adress">
+                    Адресс: Юнусабадский район,улица Шахристан
+                  </div>
+                  <div class="card_adress_2">
+                    Ориентир: Около Университета ТУИТ
+                  </div>
+                  <div class="card_time">
+                    Режим работы: 9:00 - 15:00
+                  </div>
+                  <div class="card_phone">
+                    Номер телефона: +998998224501
+                  </div>
+                  <button type="button" class="btn my_btn">Посмотреть цены</button>
+                </div>
+              </div>
+              <div class="col-xxl-4 col-xl-4 col-md-4 col-sm-12">
+                <div class="stom_card">
+                  <div class="card_img_holder"><img src="assets/img/flat-dental-care-concept-illustration/5513187.jpg"></div>
+                  <div class="card_clinic">DentClinic</div>
+                  <div class="card_dent">
+                    Имя: Аброр Маматалиев
+                  </div>
+                  <div class="card_adress">
+                    Адресс: Юнусабадский район,улица Шахристан
+                  </div>
+                  <div class="card_adress_2">
+                    Ориентир: Около Университета ТУИТ
+                  </div>
+                  <div class="card_time">
+                    Режим работы: 9:00 - 15:00
+                  </div>
+                  <div class="card_phone">
+                    Номер телефона: +998998224501
+                  </div>
+                  <button type="button" class="btn my_btn">Посмотреть цены</button>
+                </div>
+              </div>
+              <div class="col-xxl-4 col-xl-4 col-md-4 col-sm-12">
+                <div class="stom_card">
+                  <div class="card_img_holder"><img src="assets/img/flat-dental-care-concept-illustration/5513187.jpg"></div>
+                  <div class="card_clinic">DentClinic</div>
+                  <div class="card_dent">
+                    Имя: Аброр Маматалиев
+                  </div>
+                  <div class="card_adress">
+                    Адресс: Юнусабадский район,улица Шахристан
+                  </div>
+                  <div class="card_adress_2">
+                    Ориентир: Около Университета ТУИТ
+                  </div>
+                  <div class="card_time">
+                    Режим работы: 9:00 - 15:00
+                  </div>
+                  <div class="card_phone">
+                    Номер телефона: +998998224501
+                  </div>
+                  <button type="button" class="btn my_btn">Посмотреть цены</button>
+                </div>
+              </div>
+            </div>
+            <div class="map">
+              <div class="big_title">Расположение на карте</div>
+              <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A229b0e8339ac2780bf7f8537d000c8403b04dfa84e4667793cba93acc9b1c04d&amp;source=constructor" width="1110" height="600" frameborder="0"></iframe>
+            </div>
+          </div>
+          <div class="footer">
+            <div class="container">
+              <div class="row">
+                <div class="col-xll-4 col-xl-4 col-md-4">
+                  <div class="footer_logo">
+                    <img src="assets/img/Footer_logo.png">
+                  </div>
+                  <div class="footer_text_2">Современная платформа для пациентов и стоматологов</div>
+                </div>
+                <div class="col-xll-4 col-xl-4 col-md-4">
+                  <div class="footer_text_1 mb-2">Файлы сайта</div>
+                  <a href="#" class="footer_text_2">Публичная оферта</a>
+                  <a href="#" class="footer_text_2">Правила пользования</a>
+                </div>
+                <div class="col-xll-4 col-xl-4 col-md-4">
+                  <div class="footer_text_1 mb-2">Регионы настоящих пользователей</div>
+                  <span class="footer_text_2">Ташкент</span>
+                  <span class="footer_text_2">Самарканд</span>
+                  <span class="footer_text_2">Андижан</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pre_footer px-3 py-2">
+            <a href="https://www.instagram.com/blurcode_/" target="_blank">
+                <img height="30px" src="assets/img/Ресурс 4@4x.png">
+            </a>
+            <a class="developers" href="https://www.instagram.com/blurcode_/" target="_blank">Powered by BlurCode Studio</a>
+        </div>
+
+          
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="assets/Javascript/script.js"></script>
+    </body>
+</html>

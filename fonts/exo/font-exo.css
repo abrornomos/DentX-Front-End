@@ -1,0 +1,22 @@
+@font-face {
+  font-family: 'Exo';
+  font-style: normal;
+  font-weight: 400;
+  src: url('Exo2-Regular.ttf') format('truetype'), url(exo-normal.woff2) format('woff2'), url(exo-normal.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Exo';
+  font-style: normal;
+  font-weight: 600;
+  src: url('Exo2-SemiBold.ttf') format('truetype'), url(exo-600.woff2) format('woff2'), url(exo-600.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Exo';
+  font-style: normal;
+  font-weight: 700;
+  src: url('Exo2-Bold.ttf') format('truetype'), url(exo-bold.woff2) format('woff2'), url(exo-bold.woff) format('woff');
+}
+
+.exo{font-family: 'Exo';}

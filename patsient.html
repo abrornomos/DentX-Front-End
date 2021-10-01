@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link href="assets/css/style.css" rel="stylesheet">
+  <title>MyDentist</title>
+</head>
+<body>
+<div class="container-fluid">
+  <div class="my_header">
+    <a href="#" class="my_header-logo">
+      DentX
+    </a>
+    <a href="Dentx_main.html"class="my_header-item ">
+      <i class="far fa-calendar-alt"></i>
+      <span>Записи</span>
+    </a>
+    <a href="doska.html" class="my_header-item ">
+      <i class="fas fa-th-list"></i>
+      <span>Доска</span>
+    </a>
+    <a href="#" class="my_header-item active-item">
+      <i class="fas fa-user"></i>
+      <span>Пациенты</span>
+    </a>
+    <div class="my_panel">
+      <div class="inner_panel d-flex justify-content-between">
+        <div class="input-group panel_item d-flex align-items-center">
+          <input onchange="loadDoc()" id="my_search" type="text" class="form-control" placeholder="Поиск пациентов" aria-label="Recipient's username" aria-describedby="button-addon2">
+          <button class="btn search_btn btn-outline-secondary" type="button" id="button-addon2">Поиск</button>
+        </div>
+        <div id="search_result"></div>
+        <div class="panel_item">
+          <div class="dropdown position-static">
+            <button class="btn my_notification position-relative" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+
+              <i class="fas fa-bell"></i>
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                99+
+                                <span class="visually-hidden">unread messages
+                                </span>
+                            </span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="panel_item">
+          <div class="dropdown">
+            <button class="btn my_accaunt  position-relative" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<section class="container">
+  <div class="header mt-md-5">
+    <div class="header-body">
+      <div class="row align-items-center">
+        <div class="col"><h6 class="header-pretitle">Люди</h6><h1 class="header-title">Пациенты</h1></div>
+        <div class="col-auto"><button class="btn btn-primary">Новый клиент</button>
+        </div>
+      </div>
+      <div class="row align-items-center">
+        <div class="col"><ul class="nav nav-tabs nav-overflow header-tabs">
+          <li class="nav-item"><a href="#/people/customers/" class="nav-link pointer  router-link-active">Все
+    </a></li>
+        </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="card-header">
+        <div class="row align-items-center">
+          <div class="col-auto pr-0 pointer"><span class="far fa-search text-muted"></span></div>
+          <div class="col-3">
+          <input type="search" placeholder="Поиск" class="form-control form-control-flush search no-glow">
+          </div>
+          <div class="dropdown col-1">
+            <button class="btn dropdown-toggle border" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+              Qarz
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+              <li><button class="dropdown-item" type="button">Eng kami</button></li>
+              <li><button class="dropdown-item" type="button">Eng ko'pi</button></li>
+            </ul>
+          </div>
+          <div class="dropdown col-2">
+            <button class="btn dropdown-toggle border" type="button" id="dropdownMenu3" data-bs-toggle="dropdown" aria-expanded="false">
+              Ishi yakunlanmagan
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu3">
+              <li><button class="dropdown-item" type="button">Ishi yakunlangan</button></li>
+              <li><button class="dropdown-item" type="button">Ishi yakunlanmagan</button></li>
+            </ul>
+          </div> <div class="dropdown col-1">
+          <button class="btn dropdown-toggle border" type="button" id="dropdownMenu4" data-bs-toggle="dropdown" aria-expanded="false">
+            Jinsi
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenu4">
+            <li><button class="dropdown-item" type="button">Erkak</button></li>
+            <li><button class="dropdown-item" type="button">Ayol</button></li>
+          </ul>
+        </div> <div class="dropdown col-2">
+          <button class="btn dropdown-toggle border" type="button" id="dropdownMenu5" data-bs-toggle="dropdown" aria-expanded="false">
+            Oxirgi tashrif
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenu5">
+            <li><button class="dropdown-item" type="button">kecha</button></li>
+            <li><button class="dropdown-item" type="button">shu hafta</button></li>
+            <li><button class="dropdown-item" type="button">shu oyda</button></li>
+            <li><button class="dropdown-item" type="button">oldingi oyda</button></li>
+          </ul>
+        </div>
+        </div>
+      </div>
+</section>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+</body>
+</html>
