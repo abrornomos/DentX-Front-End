@@ -68,6 +68,7 @@
 <section class="container">
   <div class="header mt-md-5">
     <div class="header-body">
+      <br>
       <div class="row align-items-center">
         <div class="col"><h6 class="header-pretitle">Люди</h6><h1 class="header-title">Пациенты</h1></div>
         <div class="col-auto"><button class="btn btn-primary">Новый клиент</button>
@@ -75,58 +76,141 @@
       </div>
       <div class="row align-items-center">
         <div class="col"><ul class="nav nav-tabs nav-overflow header-tabs">
-          <li class="nav-item"><a href="#/people/customers/" class="nav-link pointer  router-link-active">Все
+          <li class="nav-item"><a href="#/people/customers/" class="nav-link pointer ml-3  router-link-active">Все
     </a></li>
         </ul>
         </div>
       </div>
     </div>
   </div>
-  <br>
-  <div class="card-header">
-        <div class="row align-items-center">
-          <div class="col-auto pr-0 pointer"><span class="far fa-search text-muted"></span></div>
-          <div class="col-3">
-          <input type="search" placeholder="Поиск" class="form-control form-control-flush search no-glow">
-          </div>
-          <div class="dropdown col-1">
-            <button class="btn dropdown-toggle border" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+ 
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-primary" type="submit">Search</button>
+      </form>
+      <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll"><br>
+        
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll offset-md-6" style="--bs-scroll-height: 100px;">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Qarz
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-              <li><button class="dropdown-item" type="button">Eng kami</button></li>
-              <li><button class="dropdown-item" type="button">Eng ko'pi</button></li>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+              <li><a class="dropdown-item" href="#">Eng kami</a></li>
+              <li><a class="dropdown-item" href="#">Eng ko'pi</a></li>
+              
+              
             </ul>
-          </div>
-          <div class="dropdown col-2">
-            <button class="btn dropdown-toggle border" type="button" id="dropdownMenu3" data-bs-toggle="dropdown" aria-expanded="false">
-              Ishi yakunlanmagan
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenu3">
-              <li><button class="dropdown-item" type="button">Ishi yakunlangan</button></li>
-              <li><button class="dropdown-item" type="button">Ishi yakunlanmagan</button></li>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Ishi
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown1">
+              <li><a class="dropdown-item" href="#">Yakunlangan</a></li>
+              <li><a class="dropdown-item" href="#">Yakunlanmagan</a></li>
+          
+             
             </ul>
-          </div> <div class="dropdown col-1">
-          <button class="btn dropdown-toggle border" type="button" id="dropdownMenu4" data-bs-toggle="dropdown" aria-expanded="false">
-            Jinsi
-          </button>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenu4">
-            <li><button class="dropdown-item" type="button">Erkak</button></li>
-            <li><button class="dropdown-item" type="button">Ayol</button></li>
-          </ul>
-        </div> <div class="dropdown col-2">
-          <button class="btn dropdown-toggle border" type="button" id="dropdownMenu5" data-bs-toggle="dropdown" aria-expanded="false">
-            Oxirgi tashrif
-          </button>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenu5">
-            <li><button class="dropdown-item" type="button">kecha</button></li>
-            <li><button class="dropdown-item" type="button">shu hafta</button></li>
-            <li><button class="dropdown-item" type="button">shu oyda</button></li>
-            <li><button class="dropdown-item" type="button">oldingi oyda</button></li>
-          </ul>
-        </div>
-        </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Jinsi
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown2">
+              <li><a class="dropdown-item" href="#">Erkak</a></li>
+              
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Ayol</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown3" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Oxirgi tashrifi
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown3">
+              <li><a class="dropdown-item" href="#">Kecha</a></li>
+              <li><a class="dropdown-item" href="#">Shu hafta</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Shu oyda</a></li>
+            </ul>
+          </li>
+        </ul>
+        
       </div>
+    </div>
+  </nav>
+  <div class="overflow">
+    <table class="table table-hover">
+      <thead class="table-light">
+      <tr>
+        <th scope="col">Rasm</th>
+        <th scope="col">Ism</th>
+        <th scope="col">Jins</th>
+        <th scope="col">Manzil</th>
+        <th scope="col">Qilingan ishlar</th>
+        <th scope="col">Qarz</th>
+        <th scope="col">Reajada</th>
+        <th scope="col">Oxirgi tashrif</th>
+      </tr>
+      </thead>
+      <tbody>
+      
+
+      <tr>
+        <th scope="row"><span class="fa-border fa-2x"><i class="fa fa-image "></i></span></th>
+        <td><a href="bemor.html" class="text-decoration-none">Manguberdi</a> <br> 2002 <br> <h6>998944803888</h6></td>
+        <td><br>Erkak</td>
+        <td><br>Sergeli</td>
+        <td><br>-</td>
+        <td><br>0 sum</td>
+        <td><br>Plomba qo'yish</td>
+        <td><br>kecha</td>
+
+      </tr>
+      <tr>
+        <th scope="row"><span class="fa-border fa-2x"><i class="fa fa-image "></i></span></th>
+        <td>Akbar <br> 1997 <br> <h6>998944803888</h6></td>
+        <td><br>Erkak</td>
+        <td><br>Sergeli</td>
+        <td><br>-</td>
+        <td><br>0 sum</td>
+        <td><br>Plomba qo'yish</td>
+        <td><br>kecha</td>
+
+      </tr>
+      <tr>
+        <th scope="row"><span class="fa-border fa-2x"><i class="fa fa-image "></i></span></th>
+        <td>Akbar <br> 1997 <br> <h6>998944803888</h6></td>
+        <td><br>Erkak</td>
+        <td><br>Sergeli</td>
+        <td><br>-</td>
+        <td><br>0 sum</td>
+        <td><br>Plomba qo'yish</td>
+        <td><br>kecha</td>
+
+      </tr> <tr>
+        <th scope="row"><span class="fa-border fa-2x"><i class="fa fa-image "></i></span></th>
+        <td>Akbar <br> 1997 <br> <h6>998944803888</h6></td>
+        <td><br>Erkak</td>
+        <td><br>Sergeli</td>
+        <td><br>-</td>
+        <td><br>0 sum</td>
+        <td><br>Plomba qo'yish</td>
+        <td><br>kecha</td>
+
+      </tr>
+      
+
+      </tbody>
+    </table>
+    </div>
+
 </section>
 
 
