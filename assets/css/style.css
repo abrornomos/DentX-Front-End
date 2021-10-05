@@ -796,8 +796,8 @@ border-bottom: 1px solid black;
   background: rgb(228, 228, 228);
   cursor: pointer;
 }
-.time-table tbody tr td{
-border: 1px solid black;
+.time-table tbody tr td th{
+border: 1px solid black; !important;
 }
 .controls{
   background: rgb(207, 207, 207);
@@ -957,4 +957,5 @@ outline-color: #15C4D7;
     width: 100%;
   }
 }
+
 /*# sourceMappingURL=style.css.map */

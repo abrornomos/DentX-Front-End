@@ -52,12 +52,11 @@
         </div>
         <div class="panel_item">
           <div class="dropdown">
-            <button class="btn my_accaunt  position-relative" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            <button class="btn my_accaunt  position-relative" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
             </button>
-            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton2">
+              <li><a class="dropdown-item" href="sozlamalar.html">Sozlamalar</a></li>
+              <li><a class="dropdown-item" href="#">Chiqish</a></li>
             </ul>
           </div>
         </div>
@@ -71,7 +70,48 @@
       <br>
       <div class="row align-items-center">
         <div class="col"><h6 class="header-pretitle">Люди</h6><h1 class="header-title">Пациенты</h1></div>
-        <div class="col-auto"><button class="btn btn-primary">Новый клиент</button>
+        <div class="col-auto"><button class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#exampleModal">Новый клиент</button>
+        </div>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Новый клиент</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+
+                <form action="">
+                  <div class="pats">
+                    <p class="mb-1 d-flex justify-content-between">Bemor</p>
+                    <input type="text" class="w-100 mb-3" placeholder="F.I.O " required>
+                    <div class="bottom-inputs d-flex justify-content-between flex-wrap mt-2">
+                      <div class="left col-12 col-lg-3 d-flex flex-column align-items-start">
+                        <p class="mb-1">Telefon</p>
+                        <input type="text" required class=" wid">
+                      </div>
+                      <div class="center col-12 col-lg-3 d-flex flex-column align-items-start">
+                        <p class="mb-1 left">Tugilgan sana</p>
+                        <input type="date" class=" wid" required>
+                      </div>
+                      <div class="end col-12 col-lg-3">
+                        <p class="mb-1 left">Jins</p>
+                        <input type="radio" class="m-1" name="drone">Erkak
+                        <input type="radio" class="m-1" name="drone">Ayol
+                      </div>
+                      <div class="end col-12 col-lg-3 d-flex flex-column align-items-start">
+                        <p class="mb-1 left">Manzil</p>
+                        <input type="text" class=" wid">
+                      </div>
+                    </div>
+                  </div>
+                 </form>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Bekor qilish</button>
+                <button type="button" class="btn btn-primary">Qo'shish</button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="row align-items-center">
@@ -84,8 +124,8 @@
     </div>
   </div>
  
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+    
       <form class="d-flex">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-primary" type="submit">Search</button>
@@ -95,7 +135,8 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarScroll"><br>
         
-        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll offset-md-6" style="--bs-scroll-height: 100px;">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll offset-lg-6 " style="--bs-scroll-height: 100px;">
+          
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Qarz
@@ -143,7 +184,6 @@
         </ul>
         
       </div>
-    </div>
   </nav>
   <div class="overflow">
     <table class="table table-hover">
@@ -210,7 +250,7 @@
       </tbody>
     </table>
     </div>
-
+  </div>
 </section>
 
 
