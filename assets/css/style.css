@@ -959,3 +959,9 @@ outline-color: #15C4D7;
 }
 
 /*# sourceMappingURL=style.css.map */
+.notification-box a{
+  text-decoration: none;
+}
+.my_accaunt{
+  margin: 10px;
+}
